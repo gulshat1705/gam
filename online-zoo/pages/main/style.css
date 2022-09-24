@@ -7,7 +7,7 @@
 .preview__main-img{
     position: relative;
     z-index: -100;
-    margin-top: -80px;
+    margin-top: -130px;
 }
 .preview__text-wrapper{
     width: 100%;
@@ -34,18 +34,143 @@
 .preview__tagline__circle{
     width: 465px;
     height: 465px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background: linear-gradient(90deg, rgba(249,128,75,1) 0%, rgba(254,144,19,1) 100%);
     border-radius: 50%;
 }
 .preview__tagline__button{
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 25px;
-    width: 252px;
-    padding: 16px;
-    border: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 50;
-    font-size: 16px;
     margin: 60px 0 10px 110px;    
+}
+.backstage{ 
+    position: relative; 
+    padding-top: 90px;     
+}
+.backstage__bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.backstage__block__img{
+    display: block;
+}
+.backstage__block{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.backstage__block__text-block{
+    width: 465px;
+}
+section{
+    margin: 50px 0;
+}
+.dark-subtitle--backstage{
+    padding: 44px 0 34px;
+}
+.pets{
+    position: relative;
+    margin: 50px 0;
+    padding: 100px 0 50px;
+}
+.pets__bg-left,
+.pets__bg-right{
+    position: relative;
+    z-index: -100;
+    position: absolute;
+    bottom: 0;
+}
+.pets__bg-left{
+    left: 0;
+}
+.pets__bg-right{
+    right: 0;
+}
+.pets__items{
+    display: grid;
+    gap: 20px 30px;
+    grid-template-columns: 366px 366px 366px;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+}
+.pets__item__gradient{
+    background: linear-gradient(90deg, rgba(250,111,50,1) 0%, rgba(254,144,19,1) 100%);
+    padding: 1px;
+    border-radius: 5px;
+    position: relative;
+}
+.pets__item__gradient img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;    
+}
+.pets__item{
+    width: 368px; 
+}
+.pets__item__gradient-block{
+    overflow: hidden;
+    background-color: black;
+    max-height: 366px;
+}
+.pets__item:hover .pets__item__gradient img{
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transition: all 1s;
+}
+.pets__item__text{
+    margin-top: -5px;
+    padding: 8px 16px;
+    position: relative;
+    background: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.pets__item:hover .pets__item__text{
+    overflow: hidden;
+    position: absolute;
+    top: 3px;
+    left: 0%;
+    z-index: 100;
+    background: none;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pets__item:hover .pets__item__gradient-block img{
+    opacity: 0.5;
+
+}
+.pets__item:hover .pets__item__text::after{
+    display: none;
+}
+.pets__item__text::after{
+    content: "";
+    width: 46px;
+    height: 38px;
+    position: absolute;
+    top: 10px;
+}
+.pets__item__text.fruits::after{
+    background: url('../../assets/icons/banana-bamboo_icon.png') no-repeat;
+    right: 0px;
+}
+.pets__item__text.fish::after{
+    background: url('../../assets/icons/meet-fish_icon.png') no-repeat;
+    right: 10px;
+}
+.pets__item__text__subtitle{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.pets__item__text__text{
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+.rounded-button.no-gradient.pets-btn{
+    display: block;
+    margin: 64px auto;
 }
