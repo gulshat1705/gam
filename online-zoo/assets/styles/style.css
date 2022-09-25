@@ -5,6 +5,10 @@ body{
     margin: 0 auto;
     color: #333B41;
 }
+a,
+button{
+    cursor: pointer;
+}
 .container{
     width: 1160px;
     margin: 0 auto;
@@ -83,6 +87,10 @@ body{
     line-height: 57px;
     margin-bottom: 10px;
 }
+.dark-title-big{
+    font-size: 36px;
+    text-align: center;
+}
 .section-text{
     font-size: 16px;
     font-weight: 400;
@@ -91,6 +99,9 @@ body{
     margin: 0;
     padding-top: 10px;
 }
+.section-text-bold{
+    font-weight: 500;
+}
 .dark-subtitle{
     color: #333B41;
     font-weight: 400;
@@ -98,7 +109,6 @@ body{
     line-height: 28.8px;
     margin: 0;
 }
-
 .rounded-button{
     background: linear-gradient(90deg, rgba(249,128,75,1) 0%, rgba(254,144,19,1) 100%);
     border-radius: 25px;
@@ -107,18 +117,61 @@ body{
     border: none;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 }
-.rounded-button__button:hover{
+.rectangle-btn{
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    width: 252px;
+    padding: 16px;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+}
+.rounded-button:hover,
+.rectangle-btn:hover{
     background: #E47209;
 }
-.rounded-button__button:active{
+.rounded-button:active,
+.rectangle-btn:active{
     background: #4B9200;
 }
-.rounded-button__button:disabled{
+.rounded-button:disabled,
+.rectangle-btn:disabled{
     background: #767474;
 }
 .rounded-button.no-gradient{
     background: #FE9013;
+}
+.rounded-button.no-gradient:hover{
+    background: #E47209;
+}
+.rounded-button.no-gradient:active{
+    background: #4B9200;;
+}
+.rounded-button.no-gradient:disabled{
+    background: #767474;
+}
+.orange-title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    text-align: center;
+}
+.orange-link{
+    color: #333B41;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #FE9013;
+}
+.small-text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
 }
