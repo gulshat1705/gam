@@ -130,6 +130,10 @@ fieldset{
     cursor: pointer;
     z-index: 1;
 }
+.amount-input{
+    border: none;
+    background: transparent;
+}
 .amount__form input[type="radio"] + label {
     cursor: pointer;
     font-weight: 500;
