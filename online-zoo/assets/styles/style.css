@@ -226,6 +226,7 @@ button{
     font-weight: 400;
     color: #4B9200;
     border: 1px solid #FE9013;
+    outline: none;
 }
 .form-control__email:hover{
     border-color: #4B9200;
