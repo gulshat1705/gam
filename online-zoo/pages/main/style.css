@@ -302,7 +302,7 @@ section{
     height: 100%;
     position: absolute;
     top: 31%;
-    left: -150px;
+    left: -104px;
     background: url('../../assets/icons/how-it-works-arrow.svg') no-repeat;
 }
 .how-it-works__item:nth-child(2)::after{
@@ -311,7 +311,7 @@ section{
     height: 100%;
     position: absolute;
     top: 31%;
-    left: 244px;
+    left: 206px;
     background: url('../../assets/icons/how-it-works-arrow.svg') no-repeat;
 }
 .how-it-works__item-img::before{
