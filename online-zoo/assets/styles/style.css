@@ -9,7 +9,7 @@ a,
 button{
     cursor: pointer;
 }
-.header__nav__menu__item__link[href='/'] {
+.header__nav__menu__item .active {
     color: #E47209;
 }
 .container{

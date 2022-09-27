@@ -454,6 +454,7 @@ section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: #F5F7F6;
+    transition: all 1s;
 }
 .active-scroll{
     background: #FE9013;
