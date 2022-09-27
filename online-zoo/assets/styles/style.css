@@ -377,3 +377,7 @@ button{
 .footer-nav .header__nav__menu{
     margin-left: 115px;
 }
+footer .rectangle-btn{
+    display: block;
+    text-decoration: none;
+}
