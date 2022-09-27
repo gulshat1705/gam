@@ -43,11 +43,11 @@
 }
 .backstage{ 
     position: relative; 
-    padding-top: 90px;     
+    padding-top: 86px;     
 }
 .backstage__bg{
     position: absolute;
-    top: 0;
+    top: -43px;
     right: 0;
 }
 .backstage__block__img{
@@ -70,7 +70,7 @@ section{
 .pets{
     position: relative;
     margin: 50px 0 0;
-    padding: 112px 0 31px;
+    padding: 117px 0 31px;
 }
 .pets__bg-left,
 .pets__bg-right{
@@ -265,7 +265,7 @@ section{
 }
 .how-it-works{
     margin: 10px;
-    padding: 42px 0 23px;
+    padding: 42px 0 18px;
 }
 .how-it-works__items{
     display: grid;
@@ -301,8 +301,8 @@ section{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 31%;
-    left: -104px;
+    top: 25%;
+    left: -102px;
     background: url('../../assets/icons/how-it-works-arrow.svg') no-repeat;
 }
 .how-it-works__item:nth-child(2)::after{
@@ -310,8 +310,8 @@ section{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 31%;
-    left: 206px;
+    top: 24%;
+    left: 198px;
     background: url('../../assets/icons/how-it-works-arrow.svg') no-repeat;
 }
 .how-it-works__item-img::before{
@@ -332,14 +332,14 @@ section{
 }
 .how-it-works__item-img.monkey::before{
     background: url('../../assets/icons/monkey.svg') no-repeat;
-    top: 57px;
-    left: 10%;
+    top: 47px;
+    left: 11%;
 }
 .how-it-works__btn{
     display: block;
     text-align: center;
     text-decoration: none;
-    margin: 30px auto;
+    margin: 34px auto;
     width: 268px;
 }
 .testimonials{
@@ -356,7 +356,8 @@ section{
     gap: 30px;
 }
 .testimonials .rectangle-btn{
-    width: 300px;
+    width: 297px;
+    margin-top: 5px;
 }
 .testimonials__text-wrap{
     position: relative;
@@ -365,7 +366,7 @@ section{
     height: 390px;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     border-radius: 20px;
-    padding: 2px;
+    padding: 0px;
     z-index: -100;
 }
 .testimonials__text-item{
@@ -411,6 +412,10 @@ section{
     overflow: hidden;
     height: 305px;
 }
+.small-text-wrap .small-text{
+    margin: 0;
+    padding-top: 10px;
+}
 .testimonials__text-item__info__text{
     font-weight: 300;
     font-size: 15px;
@@ -419,6 +424,7 @@ section{
 }
 .testimonials__text-item__info__text{
     position: relative;
+    padding-right: 3px;
 }
 .testimonials__text-item__info__text.date{
     margin-left: 10px;
@@ -427,9 +433,9 @@ section{
     content: "";
     position: absolute;
     top: 37%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
+    left: 60%;
+    width: 3px;
+    height: 3px;
     border-radius: 50%;
     background: #BDBDBD;
 }
