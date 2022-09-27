@@ -63,6 +63,10 @@
     width: 41%;
     justify-content: flex-end;
     padding-right: 64px;
+    margin-bottom: 10px;
+}
+.panda-w{
+    margin-top: -41px;
 }
 .donation-pick__desc-block__img{
     display: block;
@@ -76,6 +80,7 @@
     font-size: 16px;
     line-height: 140%;
     color: #000000;
+    margin-bottom: 12px;
 }
 
 .amount{
@@ -164,6 +169,12 @@ fieldset{
     color: #333B41;
     display: block;
 }
+
+.header__nav__menu__item__link.donate{
+    padding-left: 10px;
+}
+
+
 .amount__form label{
     display: block;
     position: absolute;
