@@ -426,7 +426,7 @@ section{
 .testimonials__text-item__info__text.dot::after{
     content: "";
     position: absolute;
-    top: 50%;
+    top: 37%;
     left: 50%;
     width: 5px;
     height: 5px;
