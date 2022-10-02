@@ -1,8 +1,6 @@
 body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    width: 1600px;
-    margin: 0 auto;
     color: #333B41;
 }
 input[type=number]::-webkit-inner-spin-button, 
@@ -10,16 +8,16 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-a,
-button{
+a, button{
     cursor: pointer;
 }
 .header__nav__menu__item .active {
     color: #E47209;
 }
 .container{
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 .header{
     width: 100%;
@@ -30,7 +28,7 @@ button{
 }
 .header__wrap{
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     margin: 0 auto;
 }
 .header__logo{
@@ -38,8 +36,8 @@ button{
     border-radius: 2px;
     width: 81px;
     height: 49px;
-    text-align: center; 
-    padding-top: 1px; 
+    text-align: center;
+    padding: 1px 2px 0px 2px;
 }
 .header__logo__link{    
     position: relative;
@@ -56,8 +54,8 @@ button{
 }
 .header__logo__link-img{
     position: absolute;
-    left: 12px;
-    bottom: 2px;
+    left: 7px;
+    bottom: 4px;
 }
 .header__nav{
     width: 100%;
@@ -109,6 +107,9 @@ button{
     font-size: 36px;
     text-align: center;
 }
+section{
+    padding-top: 140px;
+}
 .section-text{
     font-size: 16px;
     font-weight: 400;
@@ -131,7 +132,7 @@ button{
     background: linear-gradient(90deg, rgba(249,128,75,1) 0%, rgba(254,144,19,1) 100%);
     border-radius: 25px;
     width: 252px;
-    padding: 16px;
+    padding: 17px;
     border: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -142,7 +143,7 @@ button{
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 5px;
     width: 252px;
-    padding: 16px;
+    padding: 17px;
     border: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -205,7 +206,6 @@ button{
     row-gap: 23px;
 }
 .footer__wrap .rectangle-btn{
-    margin-top: -3px;
     width: 268px;
 }
 .footer__logo{
@@ -295,7 +295,6 @@ button{
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: end;
-    margin-top: -8px;
 }
 
 .social-items{
@@ -304,15 +303,15 @@ button{
     margin: 0;
 }
 .social-item{
-    margin: 14px 0 12px;
+    margin: 5px 0;
 }
 .social-link{
+    display: inline-block;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
     color: #FFFFFF;
-    padding: 6px 40px;
+    padding: 7px 40px 6px;
     position: relative;
 }    
 .social-link i{
@@ -323,15 +322,16 @@ button{
     background-color: rgba(196, 196, 196, 0.5);
     background-repeat: no-repeat;
     position: absolute;
-    top: 15%;
-    left: 0%;
+    top: 0;
+    left: 0;
+    display: inline-block;
 }
 .social-link::after{
     content: '';
     width: 16px;
     height: 23px;
     position: absolute;
-    top: 34%;
+    top: 6px;
     left: 6%;
 }
 .social-link.fb::after{
@@ -339,17 +339,15 @@ button{
 }
 .social-link.tw::after{
     background: url('../../assets/icons/tw.svg') no-repeat;
-    top: 34%;
     left: 4%;
 }
 .social-link.insta::after{
     background: url('../../assets/icons/insta.svg') no-repeat;
-    top: 31%;
-    left: 3%;
+    top: 4px;
+    left: 5px;
 }
 .social-link.ytube::after{
     background: url('../../assets/icons/ytube.svg') no-repeat;
-    top: 35%;
     left: 3%;
 }
 .social-link:hover{
@@ -364,18 +362,17 @@ button{
     font-size: 16px;
     line-height: 130%;
     color: #FFFFFF;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .copyright{
     display: grid;
     grid-template-columns: auto;
     align-items: end; 
-    margin-bottom: 15px;
     text-align: right;
 }
 
 .footer-nav .header__nav__menu{
-    margin-left: 115px;
+    margin: 0 0 11px 110px;
 }
 footer .rectangle-btn{
     width: 267px;
