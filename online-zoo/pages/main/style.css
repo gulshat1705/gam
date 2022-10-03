@@ -14,6 +14,9 @@
     width: 100%;
     
 }
+.preview__main-img__tablet1{
+    display: none;
+}
 .preview__text-wrapper{
     display: block;
     float: right;
@@ -685,6 +688,179 @@
       }
       .footer-nav .header__nav__menu {
         margin-left: 41px;
-    }   
-      
+    }         
   }
+  @media(max-width: 640px) {
+     .preview__main-img{
+        display: none;
+    }
+    .preview__main-img__tablet{
+        display: block;
+        margin-top: 50px;
+        object-fit: cover;
+        position: absolute;
+        z-index: -100;
+        width: 100%;
+    }
+    .preview__tagline__circle {
+        width: 238px;
+        height: 238px;
+        margin: 0px 52px;
+    }
+    .preview__tagline__text-main {
+        font-size: 54px;
+        top: -7px;
+        left: 93px;
+        margin: 0;
+        padding: 46px 0 110px;
+    }
+    .preview__tagline {
+        padding: 0 0 0 0;
+    }
+    .preview__text-wrapper {
+        padding: 94px 0 90px 0;
+    }
+    .preview__tagline__button {
+        position: absolute;
+        bottom: -48px;
+        left: -76%;
+        margin: 0;
+    }
+    .backstage__block__img-block{
+        display: none;
+    }
+    .backstage__block__text-block {
+        width: 81%;
+    }
+    .backstage {
+        padding-top: 69px;
+    }
+    .backstage__bg {
+        display: block;
+        top: -7px;
+        right: -45px;
+        z-index: -201;
+    }
+    .dark-subtitle--backstage {
+        padding: 31px 0 9px;
+    }
+    .pets {
+        padding: 80px 0 72px;
+    }
+    .pets__items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .pets__item-last-items{
+        display: none;
+    }
+    .pets__item__text {
+        padding: 3px 13px;
+    }
+    .pets__slide__btn.right {
+        right: 37%;
+    }
+    .pets__slide__btn.left {
+        left: 37%;
+    }
+    .pets__bg-left-small {
+        margin-left: -60px;
+        position: absolute;
+        bottom: 0;
+    }
+    .rounded-button.no-gradient.pets-btn {
+        margin-top: 63px;
+        margin-bottom: 29px;
+    }
+    .pets__bg-right {
+        bottom: -5px;
+        right: 0;
+    }
+    .pets__bg-right img {
+        max-width: 175px;  
+    }
+    .pick {
+        padding: 19px 0;
+    }
+    .pick__block .orange-title {
+        padding-top: 11px;
+        padding-bottom: 18px;
+        font-size: 42px;
+    }
+    .dark-subtitle {
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+    .pick__block__text-wrapper {
+        padding-right: 19px;
+        padding-left: 19px;
+    }
+    .pick-bold-text {
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    .section-text.pick-text {
+        padding-right: 0;
+    }
+    .how-it-works {
+        padding-top: 16px;
+    }
+    .how-it-works__items {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        padding: 4px 10px 4px 0;
+    }
+    .testimoinals__wrapper {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .testimonials__text-wrap {
+        width: 100%;
+        height: auto;
+    }
+    .small-text-wrap{
+        height: 47px;
+    }
+    .testimonials__text-item-padding {
+        height: auto;
+        margin: 0;
+    }
+    .how-it-works__btn {
+        margin: 36px auto 23px;
+    }
+    .how-it-works {
+        padding-bottom: 25px;
+    }
+    .testimonials {
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+    .testimonials__text-item-padding{
+        padding-left: 12px;
+    }
+    .testimonials__text-item-padding {
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+    .testimoinals__wrapper {
+        gap: 17px;
+    }
+    .small-text-wrap .small-text{
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+    .testimonials__scrollbar__wrapper{
+        margin-bottom: 12px;
+    }
+    .testimonials .rectangle-btn{
+        margin: 0 auto;
+        display: block;
+        width: 242px;        
+    }
+    .testimonials__bg {
+        bottom: -80px;
+        right: -80px;
+    }
+    .testimonials__bg img {
+        width: 64%;
+    }
+}

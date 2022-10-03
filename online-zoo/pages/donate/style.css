@@ -25,8 +25,8 @@
     font-size: 36px;
     line-height: 130%;
     color: #FE9013;
-    padding-top: 6px;
-    padding-bottom: 61px;
+    padding-top: 8px;
+    padding-bottom: 60px;
     margin-bottom: 0;
 }
 .donation-pick .orange-title{
@@ -65,6 +65,14 @@
     padding-right: 64px;
     margin-bottom: 10px;
 }
+.donate-bg{
+    overflow: hidden;
+}
+.donate__main-img{
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
 .panda-w{
     margin-top: -41px;
 }
@@ -76,11 +84,12 @@
     margin-top: 62px;
 }
 .pick-amount{
+    padding: 9px 0 16px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #000000;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .amount{
@@ -267,9 +276,6 @@ select::after{
     z-index: 1;
 }
 .pay input[type="radio"]:checked{
-    position: absolute;
-    top: 0px;
-    left: -20px;
     background: url('../../assets/icons/green.png') no-repeat;
     border: none;
 }
@@ -289,21 +295,80 @@ select::after{
     line-height: 140%;
     color: #333B41;
 }
+.donate-info{
+    padding: 0;
+    margin: 0;
+}
+.donate-title{
+    margin: 0;
+    padding: 32px 0 7px 0;
+}
 @media (max-width:1000px) {
-    .container{
-        min-width: 940px;
+    .donate-title{
+        padding: 0 100px 0 0;
     }
-    .header__nav__menu__item__link{
-        padding-right: 13px;
+    .info{
+        padding: 42px 30px 30px 30px;
     }
-    .header__designed{
-        margin-right: -18px;
+    .donate-text{
+        padding: 29px 0 0;
+        margin: 0;
     }
-    .donate-bg{
-        object-fit: cover;
-        width: 100%;        
+    .donation{
+        margin: 0;
+        padding: 45px 0 39px 0;
     }
-    .donate-bg img{
-        height: 100%;
+    .donation-pick{
+        padding: 19px 47px 0;
+        margin: 0;
+    }
+    .donation-pick .orange-title{
+        padding-bottom: 12px;
+    }
+    .donation-pick__desc {
+        padding-top: 100px;
+    }
+    .donation-pick__desc-block{
+        width: 39.5%;
+        padding-right: 64px;
+    }
+    .section-text.pick__desc{
+        padding-top: 14px;
+    }
+    .donation-pick__info{
+        padding: 0 18px;
+    }
+    .amount{
+        padding: 0 9px;
+    }
+    .radio-control:first-child{
+        display: none;
+    }
+    .pick-amount{
+        margin: 0;
+        padding: 14px 0 17px;
+    }
+    fieldset{
+        padding: 0.3em 0;
+    }
+    .custom-style{
+        width: 261px;
+        padding-left: 5px;
+    }
+    .dollar {
+        left: 247px;
+    }
+    .amount-input{
+        height: 52px;
+    }
+    .pay{
+        padding: 0 35px 0 17px;
+    }
+    .pay label{
+        padding-left: 5px;
+    }
+    .donte-pay-text{
+        margin: 0;
+        padding: 30px 0 46px 0;
     }
 }
