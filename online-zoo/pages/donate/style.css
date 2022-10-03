@@ -289,3 +289,21 @@ select::after{
     line-height: 140%;
     color: #333B41;
 }
+@media (max-width:1000px) {
+    .container{
+        min-width: 940px;
+    }
+    .header__nav__menu__item__link{
+        padding-right: 13px;
+    }
+    .header__designed{
+        margin-right: -18px;
+    }
+    .donate-bg{
+        object-fit: cover;
+        width: 100%;        
+    }
+    .donate-bg img{
+        height: 100%;
+    }
+}
