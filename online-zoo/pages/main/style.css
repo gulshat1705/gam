@@ -6,6 +6,7 @@
     padding-top: 0;
     overflow: hidden;
     margin-top: -81px;
+    z-index: -300;
 }
 .preview__main-img{
     object-fit: cover;
@@ -61,6 +62,9 @@
     top: 11px;
     right: 0;
     z-index: -8;
+}
+.preview__main-img__tablet{
+    display: none;
 }
 .backstage__block__img-block{
     width: 53%;
@@ -588,8 +592,8 @@
   @media(max-width: 1000px) {
     .container{
         max-width: 940px;
-        
     }
+    
       header{
         background: #111115;
         z-index: 100;
