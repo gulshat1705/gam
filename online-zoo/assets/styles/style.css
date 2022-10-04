@@ -590,3 +590,12 @@ footer .rectangle-btn{
 
 
 }
+@media (max-width: 320px) {
+    .container{
+        padding: 0 10px;
+    }
+    .header{
+        padding: 3px 0;
+    }
+    
+}
