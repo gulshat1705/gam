@@ -14,6 +14,12 @@ a, button{
 .header__nav__menu__item .active {
     color: #E47209;
 }
+.menu-btn{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -490,5 +496,96 @@ footer .rectangle-btn{
     .footer .copyright {
         margin-right: -27px;
     }
+    .menu-btn{
+        display: block;
+        width: 18px;
+        height: 10px;
+        margin: 8px 0px 10px 0px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .menu-btn span{
+        width: 26px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+ /*   .menu.active{
+        transform: translateX(0);
+    }
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg); 
+    }*/
+    .close-menu{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 3px;
+        right: 110px;        
+        background: url('../images/icons/close-ic.svg') 10px 10px no-repeat;
+        cursor: pointer;
+        z-index: 500;
+    }
+    .menu{
+        width: auto;
+        display: block;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: -100%;
+        gap: 0;
+        padding: 15px 15px 25px 43px;
+        flex-direction: column;
+        background: #F2785C;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        text-align: right;
+        transition: right, left 0.9s ease 0.1s;
+        -webkit-transition: right 0.9s ease 0.1s;
+        -moz-transition: right 0.9s ease 0.1s;
+    }
+    .menu.active {
+        right: 0;
+        transition: right 0.9s ease 0.3s;
+    }
+    .nav{
+        margin-top: 15px;
+    }
+    .nav__list{
+        display: block;
+    }
+    .nav__list__item{
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .nav__list__item.mobile-items{
+        display: list-item;
+    }
+    .nav__list__link {
+        font-size: 16px;
+    }
+    /*BURGER MENU END*/
+
 
 }

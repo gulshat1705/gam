@@ -738,6 +738,7 @@
     }
     .backstage {
         padding-top: 69px;
+        overflow: hidden;
     }
     .backstage__bg {
         display: block;
@@ -866,5 +867,17 @@
     }
     .testimonials__bg img {
         width: 64%;
+    }
+    .how-it-works__item:nth-child(2)::before{
+        background: url('../../assets/icons/arrow.png') no-repeat;
+        top: -6%;
+        left: -70px;
+        z-index: 100;
+    }
+    .how-it-works__item:nth-child(2)::after{
+        background: url('../../assets/icons/arrow.png') no-repeat;
+        top: -6%;
+        left: 137px;
+        z-index: 100;
     }
 }

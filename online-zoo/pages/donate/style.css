@@ -372,3 +372,11 @@ select::after{
         padding: 30px 0 46px 0;
     }
 }
+@media (max-width:640px) {
+
+    .donate__main-img {
+        width: 126%;
+        height: 335px;
+    }
+    
+}
