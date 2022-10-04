@@ -17,6 +17,9 @@ a, button{
 .menu-btn{
     display: none;
 }
+menu{
+    display: none;
+}
 .close-menu{
     display: none;
 }
@@ -387,7 +390,9 @@ footer .rectangle-btn{
     text-decoration: none;  
     text-align: center;
 }
-
+menu{
+    display: none;
+}
 @media (max-width:1000px) {
     .header__nav__menu__item__link{
         padding-right: 13px;
