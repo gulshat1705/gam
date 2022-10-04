@@ -372,3 +372,89 @@ select::after{
         padding: 30px 0 46px 0;
     }
 }
+@media (max-width:640px) {
+
+    .donate__main-img {
+        width: 126%;
+        height: 335px;
+    }
+    .info{
+        padding: 31px 22px 44px 22px;
+    }
+    .donate-title{
+        font-size: 24px;
+        padding: 0;
+    }
+    .dark-subtitle.donation-subtitle{
+        text-align: center;
+    }
+    .donate-text{
+        padding-top: 17px;
+    }
+    .donation{
+        padding: 29px 0;
+    }
+    .donation-pick {
+        padding: 27px 0 27px;
+    }
+    .donation-pick .orange-title{
+        padding-bottom: 23px;
+    }
+    .donation-pick__desc-block{
+        gap: 5px;
+        padding-right: 24px;
+        margin-bottom: 0;
+        margin-top: -5px;
+    }
+    .donation-pick__desc{
+        gap: 30px;
+    }
+    .donation-pick__info{
+        padding: 0;
+    }
+    .panda-w{
+        margin-top: -47px;
+    }
+    .donation-pick__desc-block {
+    width: 36.5%;
+    }
+    .section-text.pick__desc {
+    padding-top: 10px;
+    }
+    .pick-amount {
+        padding: 5px 0 6px 10px;
+        font-weight: 300;
+    }
+    .amount__form{
+        padding: 0 20px;
+        width: 93%;
+    }
+    .tablet-hide{
+        display: none;
+    }
+    .form-border{
+        width: 92%;
+    }
+    .radio-control{
+        margin-left: 5px;
+    }
+    .radio-control label{
+        padding-left: 5px;
+    }
+    .custom-style {
+    width: 176px;
+    }
+    .dollar{
+        left: 159px;
+        top: 11px;
+    }
+    .amount-input{
+        height: 40px;
+    }
+    .pay-date {
+        margin-top: 34px;
+    }
+    .donte-pay-text {
+    padding-bottom: 4px;
+    }
+}
