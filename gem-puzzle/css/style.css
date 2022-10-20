@@ -86,6 +86,12 @@ body{
     text-decoration: underline;
     cursor: pointer;
 }
+.sizes i:hover{
+    color: #575e5d;    
+}
+.sizes i:active{
+    color: #15857b;
+}
 footer {
     position: fixed;
     bottom: 0;
