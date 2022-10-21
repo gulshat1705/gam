@@ -10,18 +10,18 @@ body{
     width: 100%;
     padding: 20px;
 }
-.header__nav{
+.nav{
     display: flex;
     justify-content: center;
 }
-.header__nav__menu{
+.menu{
     display: flex;
     list-style: none;
 }
-.header__nav__menu-item{
+.menu-item{
     margin: 0 15px;
 }
-.header__nav__menu-button{
+.menu-button{
     cursor: pointer;
     display: block;
     width: 7vw;
@@ -32,7 +32,7 @@ body{
     border-radius: 5px;
     text-align: center;
 }
-.header__nav__menu-button:hover{
+.menu-button:hover{
     transform: scale(1.1);
     background: #15857b;
     -webkit-box-shadow: 0px 4px 15px 3px rgba(73, 65, 65, 0.8); 
@@ -91,6 +91,10 @@ body{
 }
 .sizes i:active{
     color: #15857b;
+}
+.empty-box{
+    width: 100%;
+    background: #575e5d;
 }
 footer {
     position: fixed;
