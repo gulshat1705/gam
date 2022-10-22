@@ -25,7 +25,12 @@ for(i=0; i<=menuArr.length - 1; i++) {
 
     li.setAttribute('class', 'menu-item');
     menuLink.setAttribute('class', 'menu-button');
+    
     menuLink.innerHTML = menuArr[i];
+    console.log('inner', menuLink.innerHTML);
+    if(menuLink.innerHTML === 'Stop') {
+        menuLink.className += menuLink.className ? ' stop' : 'stop';
+    }
     li.appendChild(menuLink);
     ul.appendChild(li);
 }
@@ -35,7 +40,7 @@ nav.appendChild(ul);
 const main = document.createElement('main');
 main.className = 'main';
 
-header.appendBefore(main);
+// header.appendBefore(main);
 
 
 
