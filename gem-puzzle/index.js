@@ -14,16 +14,23 @@ const nav = document.createElement('nav');
 nav.className = 'nav';
 header.appendChild(nav);
 
+const menuArr = ['Shuffle and start', 'Stop', 'Save', 'Results'];
 const ul = document.createElement('ul');
-ul.className = 'menu';
-nav.appendChild(ul);
+// ul.className = 'menu';
+ul.setAttribute('class', 'menu');
 
-ul.innerHTML += `
-                <li class="menu-item"><a class="menu-button">Shuffle and start</a></li>
-                <li class="menu-item"><a class="menu-button stop">Stop</a></li>
-                <li class="menu-item"><a class="menu-button">Save</a></li>
-                <li class="menu-item"><a class="menu-button">Results</a></li>
-                `;
+for(i=0; i<=menuArr.length - 1; i++) {
+    const li = document.createElement('li');
+    const menuLink = document.createElement('a');
+
+    li.setAttribute('class', 'menu-item');
+    menuLink.setAttribute('class', 'menu-button');
+    menuLink.innerHTML = menuArr[i];
+    li.appendChild(menuLink);
+    ul.appendChild(li);
+}
+
+nav.appendChild(ul);
 
 const main = document.createElement('main');
 main.className = 'main';
