@@ -58,11 +58,13 @@ body{
     display: grid;        
     max-width: 30vw;
     min-height: 30vw;
-}
-.table-four{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
+/* .table-four{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+} */
 .table-items{
     display: flex;
     justify-content: center;
