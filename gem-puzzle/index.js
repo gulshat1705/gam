@@ -73,6 +73,7 @@ for (i=0; i<=range.length; i++) {
 }
 
 const shuffleItems = () => {
+    console.log('shuffle')
     let frag = this.document.createDocumentFragment();
     while (table.children.length) {
         frag.appendChild(table.children[Math.floor(Math.random() * table.children.length)]);
@@ -80,31 +81,32 @@ const shuffleItems = () => {
     table.appendChild(frag);
     main.appendChild(table);
 }
+shuffleItems()
 shuffle.addEventListener('click', shuffleItems);
 
+const staticInfoSizes = document.createElement('div');
+staticInfoSizes.className = 'static-info';
+staticInfoSizes.innerHTML = `<h5 class="static-info-text static-info__current-size">Frame size: <i class="current-size">4x4</i></h5>`
+table.after(staticInfoSizes);
 
-// // const tableItemsArr = table.children;
-// // shuffle.addEventListener('click', function () {
-// //     tableItemsArr.sort(() => Math.random() - 0.5);
-// //     console.log(tableItemsArr);
-// //     console.log('clicked');
-// // });
-// main.appendChild(table)
+const staticInfoAllSizes = document.createElement('div');
+staticInfoAllSizes.className = 'static-info';
+const ulSizes = document.createElement('ul');
+ulSizes.className = 'static-info-text static-info__sizes';
+ulSizes.innerHTML = 'Other sizes: ';
 
-// <div class="static-info">
-// <h5 class="static-info-text static-info__current-size">Frame size: <i class="current-size">4x4</i></h5>
-// </div>
-// <div class="static-info ">
-// <ul class="static-info-text static-info__sizes">
-//     Other sizes: 
-//     <li class="sizes"><i class="sizes-three">3x3</i></li> 
-//     <li class="sizes"><i class="sizes-three"></i></li> 
-//     <li class="sizes"><i class="sizes-three">3x3</i></li> 
-//     <li class="sizes"><i class="sizes-three">3x3</i></li> 
-//     <li class="sizes"><i class="sizes-three">3x3</i></li> 
-//     <li class="sizes"><i class="sizes-three">3x3</i></li>                     
-// </ul>
-// </div>
-// `
+staticInfoAllSizes.appendChild(ulSizes);
+staticInfoSizes.after(staticInfoAllSizes);
 
+for(i=0; i<=sizesArr.length - 1; i++) {
+    const li = document.createElement('li');
+    const size = document.createElement('i');
 
+    li.setAttribute('class', 'sizes');
+    size.setAttribute('class', 'size');
+        
+    size.innerHTML = `${sizesArr[i]}x${sizesArr[i]}`;
+    
+    li.appendChild(size);
+    ulSizes.appendChild(li);
+}
