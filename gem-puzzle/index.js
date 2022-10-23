@@ -56,34 +56,41 @@ table.setAttribute('class', 'table');
 const sizesArr = [3, 4, 5, 6, 7, 8];
 let userSelect = sizesArr[1];
 let innerNum = (userSelect * userSelect) - 1;
-console.log(innerNum);
 
 const range = [...Array(innerNum - 1 + 1).keys()].map(x => x + 1);
-console.log(range.concat(''));
 const numsArr = range.concat('');
-
-const itemsShuffle = (arr) => {
-    arr.sort(() => Math.random() - 0.5);
-    console.log('shuffle');
-}
 
 const shuffle = document.querySelector('#shuffle');
 const stop = document.querySelector('#stop');
 const save = document.querySelector('#save');
 const results = document.querySelector('#results');
 
-
-shuffle.addEventListener('click', itemsShuffle(numsArr));
-
 for (i=0; i<=range.length; i++) {
     const tableItems = document.createElement('div');
     tableItems.setAttribute('class', 'table-items');
-    tableItems.innerHTML = numsArr[i];
-    
+    tableItems.innerHTML = numsArr[i];    
     table.appendChild(tableItems);
 }
 
-main.appendChild(table)
+const shuffleItems = () => {
+    let frag = this.document.createDocumentFragment();
+    while (table.children.length) {
+        frag.appendChild(table.children[Math.floor(Math.random() * table.children.length)]);
+    }
+    table.appendChild(frag);
+    main.appendChild(table);
+}
+shuffle.addEventListener('click', shuffleItems);
+
+
+// // const tableItemsArr = table.children;
+// // shuffle.addEventListener('click', function () {
+// //     tableItemsArr.sort(() => Math.random() - 0.5);
+// //     console.log(tableItemsArr);
+// //     console.log('clicked');
+// // });
+// main.appendChild(table)
+
 // <div class="static-info">
 // <h5 class="static-info-text static-info__current-size">Frame size: <i class="current-size">4x4</i></h5>
 // </div>
