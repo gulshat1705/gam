@@ -4,9 +4,8 @@ div.className = 'wrapper';
 const wrapper = document.getElementsByClassName('wrapper');
 
 document.getElementsByTagName('body')[0].appendChild(div);
-//header
 const header = document.createElement('header');
-let innerDiv = document.createElement('div');
+const innerDiv = document.createElement('div');
 header.className = 'header';
 div.appendChild(header);
 
@@ -44,11 +43,60 @@ main.className = 'main';
 header.after(main);
 const staticInfo = document.createElement('div');
 staticInfo.setAttribute('class', 'static-info');
+const shuffle = document.querySelector('#shuffle');
+const stop = document.querySelector('#stop');
+const save = document.querySelector('#save');
+const results = document.querySelector('#results');
+let moves = 0;
+let minutes = 00;
+let seconds = 00;
+
 staticInfo.innerHTML = `
-                        <h5 class="static-info-text static-info__moves">Moves: <i class="moves">1</i></h5>
-                        <h5 class="static-info-text static-info__time">Time: <i class="times">10:55</i></h5>
+                        <h5 class="static-info-text static-info__moves">Moves: <i class="moves">${moves}</i></h5>
+                        <h5 class="static-info-text static-info__time">Time: <i class="minute">00</i> : <i class="times">00</i></h5>
                     `
-main.appendChild(staticInfo);                    
+
+main.appendChild(staticInfo);   
+
+
+let times = document.querySelector('.times');
+let minutesInner = document.querySelector('.minute');
+let interVal;
+
+const showMoves = () => {
+
+}
+shuffle.addEventListener('click', function() {
+    clearInterval(interVal);
+    interVal = setInterval(startTimer, 1000);
+})
+
+stop.addEventListener('click', function() {
+    clearInterval(interVal);
+});
+function startTimer () {
+    stop.style.display = "inline-block";
+    seconds++;
+    
+    if(seconds <= 9){
+      times.innerHTML = "0" + seconds;
+    }
+    
+    if (seconds > 9){
+      times.innerHTML = seconds;
+    }
+  
+    if (seconds > 59) {
+      console.log("minutes");
+      minutes++;
+      minutesInner.innerHTML = "0" + minutes;
+      seconds = 0;
+      times.innerHTML = "0" + 0;
+    }
+    if (minutes > 9){
+      minutesInner.innerHTML = minutes;
+    }
+  }
 
 const table = document.createElement('div');
 table.setAttribute('class', 'table');
@@ -56,14 +104,8 @@ table.setAttribute('class', 'table');
 const sizesArr = [3, 4, 5, 6, 7, 8];
 let userSelect = sizesArr[1];
 let innerNum = (userSelect * userSelect) - 1;
-
 const range = [...Array(innerNum - 1 + 1).keys()].map(x => x + 1);
 const numsArr = range.concat('');
-
-const shuffle = document.querySelector('#shuffle');
-const stop = document.querySelector('#stop');
-const save = document.querySelector('#save');
-const results = document.querySelector('#results');
 
 for (i=0; i<=range.length; i++) {
     const tableItems = document.createElement('div');
@@ -73,20 +115,19 @@ for (i=0; i<=range.length; i++) {
 }
 
 const shuffleItems = () => {
-    console.log('shuffle')
     let frag = this.document.createDocumentFragment();
     while (table.children.length) {
         frag.appendChild(table.children[Math.floor(Math.random() * table.children.length)]);
     }
     table.appendChild(frag);
-    main.appendChild(table);
+    staticInfo.after(table);
 }
 shuffleItems()
 shuffle.addEventListener('click', shuffleItems);
 
 const staticInfoSizes = document.createElement('div');
 staticInfoSizes.className = 'static-info';
-staticInfoSizes.innerHTML = `<h5 class="static-info-text static-info__current-size">Frame size: <i class="current-size">4x4</i></h5>`
+staticInfoSizes.innerHTML = `<h5 class="static-info-text static-info__current-size">Frame size: <i class="current-size">${sizesArr[1]}x${sizesArr[1]}</i></h5>`
 table.after(staticInfoSizes);
 
 const staticInfoAllSizes = document.createElement('div');

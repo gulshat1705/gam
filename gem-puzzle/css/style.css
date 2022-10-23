@@ -1,6 +1,6 @@
 body{
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 .wrapper{
     max-width: 1280px;
@@ -31,6 +31,7 @@ body{
     background: #31a59b;
     border-radius: 5px;
     text-align: center;
+    text-transform: capitalize;
 }
 .menu-button:hover{
     transform: scale(1.1);
@@ -70,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
     border: 1px solid #575e5d;
-    font-size: 2em;    
+    font-size: 1.5em;    
 }
 .static-info i{
     color: #15857b;
