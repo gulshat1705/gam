@@ -151,3 +151,10 @@ for(i=0; i<=sizesArr.length - 1; i++) {
     li.appendChild(size);
     ulSizes.appendChild(li);
 }
+
+const tableItems = document.querySelectorAll('.table-items');
+
+// const emptyTile = numsArr[numsArr.length - 1];
+if(tableItems.innerHTML === ''){
+  tableItems.setAttribute('class', 'table-items empty');
+}
